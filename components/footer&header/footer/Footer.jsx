@@ -13,7 +13,7 @@ const Footer = ({dark}) => {
     
         <footer  className="bg-verdeClaro1">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
-          <path fill={`${dark ? '#0f172a' : "#f1f5f9"}`} fillOpacity="1" d="M0,96L60,106.7C120,117,240,139,360,144C480,149,600,139,720,122.7C840,107,960,85,1080,85.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+          <path fill={`${dark ? '#0f172a' : "#f9fafb"}`} fillOpacity="1" d="M0,96L60,106.7C120,117,240,139,360,144C480,149,600,139,720,122.7C840,107,960,85,1080,85.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
         </svg>
 
             <div className={inView ? ` pb-5 px-2 relative   opacity-100 delay-300 duration-700 ease-in-out ` : ' pb-5 relative opacity-0 delay-300  duration-700 ease-in-out'}  ref={ref}

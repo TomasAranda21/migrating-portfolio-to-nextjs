@@ -30,7 +30,6 @@ export default function Home() {
 
   const [loading, setLoading] = useState(true)
 
-
   
   useEffect(() => {
     
@@ -66,22 +65,6 @@ export default function Home() {
         };
       }, [])
       
-      
-      useEffect(() => {
-        
-        if (dark === true) {
-          
-          document.documentElement.classList.add('dark')
-          
-          console.log("Modo dark")
-        } else {
-          
-          document.documentElement.classList.remove('dark')
-          console.log("Modo light")
-        }
-
-      }, [dark])
-      
       if(loading) return <LoadingPage/>
 
 
@@ -105,7 +88,7 @@ export default function Home() {
           <About dark={dark}/>
           <Portfolio proyects={proyects} dark={dark}/>
           <Skills experiencia={experiencia} skills={skills} dark={dark}/>
-          <Contact dark={dark}/>
+          {/* <Contact dark={dark}/> */}
         
       </main>
 
