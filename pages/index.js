@@ -38,7 +38,7 @@ export default function Home() {
       
       setLoading(false)
       
-    }, 1500)
+    }, 500)
     
     
     const getUser = onSnapshot(
