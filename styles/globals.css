@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slick-slide > div{
+  margin: 0 10px;
+
+}
+
+.slick-list {
+  margin: 0 -10px
+}
+
+.responsiveCarousel{
+  padding: 20px 0px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (max-width: 376px) {
+
+  .responsiveCarousel{
+      width: 100%;
+      margin: 0 auto;
+  }
+}
+@media (min-width: 640px) {
+  .responsiveCarousel{width: 100%;}
+}
+@media (min-width: 768px) {
+  .responsiveCarousel{
+      padding-left: 25px;
+      padding-right: 25px;
+  }
+}
+@media (min-width: 1024px) {
+  .responsiveCarousel{width: 80%;}
+}
+@media (min-width: 1124px) {
+  .responsiveCarousel{width: 65%;}
+}
+@media (min-width: 1300px) {
+  .responsiveCarousel{width: 60%;}
+}
+@media (min-width: 1398px) {
+  .responsiveCarousel{width: 70%;}
+}
+@media (min-width: 1400px) {
+  .responsiveCarousel{width: 50%; padding: 0px;}
+}
+@media (min-width: 1425px) {
+  .responsiveCarousel{width: 80%; padding: 0px;}
+}
+@media (min-width: 1538px) {
+  .responsiveCarousel{width: 70%; padding: 0px;}
+}
+@media (min-width: 1638px) {
+  .responsiveCarousel{width: 60%; padding: 0px;}
+}

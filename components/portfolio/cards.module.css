@@ -1,0 +1,114 @@
+.cards::before{
+    background: #000;
+    content: "";
+    width: 150px;
+    height: 900px;
+    position: absolute;
+    left: -140px;
+    top: -340px;
+    transform: rotate(30deg);
+    z-index: 20;
+
+    transition: all 0.8s ease;
+}
+
+.cards::after{
+    background: #000;
+    content: "";
+    width: 150px;
+    height: 900px;
+    position: absolute;
+    bottom: -340px;
+    right: -140px;
+    transform: rotate(30deg);
+    z-index: 20;
+
+    transition: all 0.8s ease;
+}
+
+.cards:hover:before{
+
+    background: #FA8D74;
+    left: 140px;
+    top: 100px;
+}
+
+.cards:hover:after{
+
+    background: #7EECCB; 
+    right: 140px;
+    bottom: 100px;
+}
+
+.cards{
+    cursor: pointer;
+}
+
+
+@media (min-width: 1500px) {
+    .cards:hover:after{
+        right: 110px;
+        bottom: 100px;
+    }
+
+    .cards:hover:before{
+        left: 110px;
+        top: 100px;
+    }
+
+    .cards::before{
+        background: #000;
+        content: "";
+        width: 150px;
+        height: 900px;
+        position: absolute;
+        left: -140px;
+        top: -340px;
+        transform: rotate(30deg);
+        z-index: 20;
+    
+        transition: all 0.8s ease;
+    }
+    
+    .cards::after{
+        background: #000;
+        content: "";
+        width: 150px;
+        height: 900px;
+        position: absolute;
+        bottom: -340px;
+        right: -140px;
+        transform: rotate(30deg);
+        z-index: 20;
+    
+        transition: all 0.8s ease;
+    }
+}
+
+
+
+
+.info_container{
+    opacity: 0;
+    transition: all 0.5s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 10px;
+    position: absolute;
+    top : 0;
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+    gap: 10px;
+}
+
+.info_container:hover{
+    opacity: 1;
+    transition: all .3s ease;
+}
+
